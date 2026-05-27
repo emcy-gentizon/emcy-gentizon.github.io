@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emcy Gentizon — Virtual Executive Assistant</title>
+  <meta name="description" content="Virtual Executive Assistant & Accounting Admin with 13 years of remote experience supporting a Canadian company. Available for remote roles immediately.">
+  <meta property="og:title" content="Emcy Gentizon — Virtual Executive Assistant">
+  <meta property="og:description" content="13 years of remote back-office ownership. AP/AR, QuickBooks, ISO records, executive support. Available now.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0D1B2A;
+      --navy-mid: #162336;
+      --copper: #C4874A;
+      --copper-light: #D9A06E;
+      --cream: #F7F5F0;
+      --white: #FFFFFF;
+      --ink: #1A1A1A;
+      --muted: #6B7280;
+      --border: #E5E2DB;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2.5rem;
+      background: rgba(13, 27, 42, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--copper-light); }
+
+    .nav-cta {
+      font-size: 0.82rem;
+      color: var(--copper-light);
+      border: 1px solid rgba(196,135,74,0.4);
+      padding: 0.45rem 1.1rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+
+    .nav-cta:hover {
+      background: var(--copper);
+      color: var(--white);
+      border-color: var(--copper);
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      padding: 8rem 2.5rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 70% 50%, rgba(196,135,74,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(29,122,107,0.06) 0%, transparent 60%);
+    }
+
+    .hero-inner {
+      max-width: 860px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--copper);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .hero-eyebrow::after {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: var(--copper);
+      opacity: 0.5;
+    }
+
+    .hero-name {
+      font-family: var(--serif);
+      font-size: clamp(3.2rem, 8vw, 6rem);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-name em {
+      font-style: italic;
+      color: var(--copper-light);
+    }
+
+    .hero-title {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: rgba(255,255,255,0.5);
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      margin-bottom: 2rem;
+    }
+
+    .hero-tagline {
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,0.8);
+      max-width: 580px;
+      line-height: 1.65;
+      margin-bottom: 3rem;
+      font-weight: 300;
+    }
+
+    .hero-tagline strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      background: var(--copper);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 2rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      transition: all 0.2s;
+      border: 1px solid var(--copper);
+    }
+
+    .btn-primary:hover { background: var(--copper-light); border-color: var(--copper-light); transform: translateY(-1px); }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      background: transparent;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      border-radius: 2rem;
+      font-weight: 400;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover { border-color: rgba(255,255,255,0.5); color: var(--white); }
+
+    /* ── STATS STRIP ── */
+    .stats-strip {
+      background: var(--navy-mid);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 2rem 2.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0 3.5rem;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .stat-item:last-child { border-right: none; }
+
+    .stat-number {
+      font-family: var(--serif);
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--copper-light);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.45);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 5.5rem 2.5rem; }
+
+    .section-inner { max-width: 860px; margin: 0 auto; }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--copper);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── VIDEO ── */
+    #video { background: var(--white); }
+
+    .video-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .video-embed {
+      aspect-ratio: 16/9;
+      background: var(--navy);
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .video-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .play-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 2px solid rgba(196,135,74,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .play-icon svg { fill: var(--copper); margin-left: 4px; }
+
+    .video-text p {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+
+    .video-text p:last-child { margin-bottom: 0; }
+
+    /* ── ABOUT ── */
+    #about { background: var(--cream); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: #3D3D3D;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-text p:last-child { margin-bottom: 0; }
+
+    .about-aside {
+      padding-top: 0.5rem;
+    }
+
+    .highlight-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .highlight-card:last-child { margin-bottom: 0; }
+
+    .highlight-card .label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight-card .value {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 0.3rem;
+    }
+
+    .highlight-card .desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--white); }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 2.5rem;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .exp-item:first-child { padding-top: 0; }
+    .exp-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .exp-meta { padding-top: 0.2rem; }
+
+    .exp-company {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--ink);
+      margin-bottom: 0.2rem;
+    }
+
+    .exp-location {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .exp-dates {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--copper);
+      background: rgba(196,135,74,0.1);
+      padding: 0.25rem 0.65rem;
+      border-radius: 99px;
+      border: 1px solid rgba(196,135,74,0.2);
+    }
+
+    .exp-title {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+
+    .exp-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 0.9rem;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .exp-bullets li {
+      font-size: 0.9rem;
+      color: #3D3D3D;
+      line-height: 1.6;
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .exp-bullets li::before {
+      content: '▸';
+      color: var(--copper);
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      margin-top: 0.2rem;
+    }
+
+    .exp-result {
+      margin-top: 1rem;
+      padding: 0.9rem 1.1rem;
+      background: rgba(196,135,74,0.06);
+      border-left: 2px solid var(--copper);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.88rem;
+      color: #4A3520;
+      line-height: 1.6;
+    }
+
+    .exp-result strong { color: #8B5A1A; font-weight: 500; }
+
+    .exp-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.6rem;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      color: var(--muted);
+      margin: 0.75rem 0.3rem 0 0;
+    }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--cream); }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .skill-group {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem;
+    }
+
+    .skill-group-title {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .skill-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .skill-list li {
+      font-size: 0.88rem;
+      color: #3D3D3D;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .skill-list li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--copper);
+      flex-shrink: 0;
+      opacity: 0.6;
+    }
+
+    /* ── RESUME ── */
+    #resume {
+      background: var(--navy);
+      text-align: center;
+    }
+
+    #resume .section-title { color: var(--white); }
+
+    .resume-desc {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.55);
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .resume-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--cream); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-intro {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--ink);
+      transition: color 0.2s;
+    }
+
+    .contact-item:last-child { border-bottom: none; }
+    .contact-item:hover { color: var(--copper); }
+
+    .contact-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-icon svg { width: 16px; height: 16px; fill: var(--copper); }
+
+    .contact-label { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.1rem; }
+    .contact-value { font-size: 0.9rem; font-weight: 500; }
+
+    .availability-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
+    .avail-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22C55E;
+      margin-right: 0.4rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .avail-status {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #16A34A;
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .avail-title {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+
+    .avail-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .avail-list li {
+      font-size: 0.88rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .avail-list li::before {
+      content: '✓';
+      color: #22C55E;
+      font-weight: 500;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      padding: 2rem 2.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    footer a { color: rgba(255,255,255,0.45); text-decoration: none; }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      #hero { padding: 7rem 1.5rem 4rem; }
+      .stats-strip { padding: 1.5rem 1rem; gap: 0; overflow-x: auto; }
+      .stat-item { padding: 0 1.5rem; min-width: 120px; }
+      section { padding: 4rem 1.5rem; }
+      .video-wrapper, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Emcy Gentizon</a>
+    <ul class="nav-links">
+      <li><a href="#video">Intro</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="Emcy_Gentizon_EA_Resume.pdf" download class="nav-cta">Download CV</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Available for remote opportunities</p>
+      <h1 class="hero-name">Emcy <em>Gentizon</em></h1>
+      <p class="hero-title">Virtual Executive Assistant &amp; Accounting Admin</p>
+      <p class="hero-tagline">
+        I ran the back office of a <strong>Canadian company for 13 years</strong> — remotely, independently, reliably.
+        AP/AR, executive support, ISO records, collections, lease admin.
+        If you need someone who gets it done without being managed every step of the way,
+        <strong>let's talk.</strong>
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Get in touch
+        </a>
+        <a href="Emcy_Gentizon_EA_Resume.pdf" download class="btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <span class="stat-number">13</span>
+      <span class="stat-label">Years Remote</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">90%</span>
+      <span class="stat-label">AR Backlog Cleared in 60 Days</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">2</span>
+      <span class="stat-label">Companies Supported Simultaneously</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">ISO</span>
+      <span class="stat-label">9001 &amp; 14001 Records</span>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+  <section id="video">
+    <div class="section-inner fade-in">
+      <div class="video-wrapper">
+        <div class="video-embed">
+          <!-- REPLACE the div below with your YouTube embed once your video is ready -->
+          <!-- Example: <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe> -->
+          <div class="video-placeholder">
+            <div class="play-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <span>Video introduction coming soon</span>
+          </div>
+        </div>
+        <div class="video-text">
+          <p class="section-eyebrow">Meet Emcy</p>
+          <h2 class="section-title">A quick introduction</h2>
+          <p>I believe in showing, not just telling. This short video is a 90-second look at who I am, what I do, and why 13 years with one company means something.</p>
+          <p>No script, no polish. Just a direct conversation about what I bring to a remote team and what I'm looking for next.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner fade-in">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-eyebrow">About me</p>
+          <h2 class="section-title">13 years of running a back office from the Philippines</h2>
+          <p>For over a decade, I was the remote backbone of a Canadian point-of-sale and equipment leasing operation. No local team, no manager checking in daily — just me, the work, and the responsibility to keep two companies running clean.</p>
+          <p>That meant everything from chasing AR and reconciling accounts to managing executive correspondence, coordinating vendors, and maintaining ISO-compliant records — all in QuickBooks Online, across time zones, without dropping the ball.</p>
+          <p>Before that: international debt collections in Dubai, operations coordination for KFC Philippines, and government administrative work. Every environment taught me something different. The throughline was always the same — show up, take ownership, deliver.</p>
+          <p>I hold a Bachelor of Science in Accountancy from the University of San Agustin, Iloilo City. I'm based in Rizal, Philippines and available immediately for full-time remote roles.</p>
+        </div>
+        <div class="about-aside">
+          <div class="highlight-card">
+            <div class="label">Biggest win</div>
+            <div class="value">90% in 60 days</div>
+            <div class="desc">Inherited a 3-month AR backlog and cleared 90% of outstanding balances in 60 days — without disrupting any ongoing operational work.</div>
+          </div>
+          <div class="highlight-card">
+            <div class="label">Documentation standard</div>
+            <div class="value">ISO 9001 &amp; 14001</div>
+            <div class="desc">Maintained ISO-compliant records independently for over 13 years. Clean, organized, and audit-ready — always.</div>
+          </div>
+          <div class="highlight-card">
+            <div class="label">Education</div>
+            <div class="value">BS Accountancy</div>
+            <div class="desc">University of San Agustin, Iloilo City, Philippines.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner fade-in">
+      <p class="section-eyebrow">Work history</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">Condor Solutions Ltd.</div>
+          <div class="exp-location">Remote — Canada</div>
+          <div class="exp-dates">Aug 2013 – May 2026</div>
+        </div>
+        <div>
+          <div class="exp-title">Virtual Executive Assistant &amp; Accounting Admin</div>
+          <p class="exp-desc">Back-office support for a Canadian point-of-sale company — remotely, independently, for 13 years.</p>
+          <ul class="exp-bullets">
+            <li>Managed executive correspondence, scheduling, and vendor and client communication</li>
+            <li>Handled full-cycle AP/AR, invoicing, bank reconciliation, and collections in QuickBooks Online</li>
+            <li>Produced financial reports and monitored customer accounts, escalating delinquent accounts through a structured collections process</li>
+            <li>Maintained ISO 9001 and 14001-compliant records independently throughout tenure</li>
+            <li>Operated across ConnectWise, CAFT, Global Payments, and Microsoft Excel</li>
+          </ul>
+          <div class="exp-result">
+            <strong>Key result:</strong> Inherited a 3-month AR backlog and resolved 90% of outstanding balances within 60 days — without disrupting ongoing operations.
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">KK Leasing Inc.</div>
+          <div class="exp-location">Remote — Canada</div>
+          <div class="exp-dates">Aug 2013 – May 2026</div>
+        </div>
+        <div>
+          <div class="exp-title">Virtual Executive Assistant &amp; Accounting Admin</div>
+          <p class="exp-desc">Concurrent role supporting the equipment leasing arm under the same management — full leasing administration cycle alongside general EA and accounting responsibilities.</p>
+          <ul class="exp-bullets">
+            <li>Administered equipment lease contracts, payment schedules, and renewal tracking</li>
+            <li>Managed customer account communication and collections follow-up for leasing accounts</li>
+            <li>Handled AP/AR, invoicing, and bank reconciliation via QuickBooks Online and Winward</li>
+            <li>Supported executive correspondence, vendor coordination, and leasing documentation</li>
+          </ul>
+          <span class="exp-tag">Winward</span>
+          <span class="exp-tag">QuickBooks Online</span>
+          <span class="exp-tag">Lease Administration</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">Cool R Us Inc. (KFC Philippines)</div>
+          <div class="exp-location">Philippines</div>
+          <div class="exp-dates">2010 – 2013</div>
+        </div>
+        <div>
+          <div class="exp-title">Technical Clerk &amp; Customer Service Coordinator</div>
+          <ul class="exp-bullets">
+            <li>Coordinated nationwide engineering dispatch and work-order tracking across KFC locations</li>
+            <li>Produced weekly and monthly management performance reports</li>
+            <li>Managed data coordination and customer-facing service communication</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">First Security Group LLC</div>
+          <div class="exp-location">Dubai, UAE</div>
+          <div class="exp-dates">2007 – 2009</div>
+        </div>
+        <div>
+          <div class="exp-title">Debt Collections Administrator</div>
+          <ul class="exp-bullets">
+            <li>Managed international debt recovery across multiple client portfolios</li>
+            <li>Coordinated payment resolution with global account holders</li>
+            <li>Maintained detailed collections documentation across all accounts</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">Provincial Government of Guimaras</div>
+          <div class="exp-location">Guimaras, Philippines</div>
+          <div class="exp-dates">2002 – 2006</div>
+        </div>
+        <div>
+          <div class="exp-title">Data Encoder &amp; Office Clerk</div>
+          <ul class="exp-bullets">
+            <li>Data encoder, Bids &amp; Awards Committee — procurement documentation and records</li>
+            <li>Office clerk, Office of the Governor — executive administrative support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner fade-in">
+      <p class="section-eyebrow">What I work with</p>
+      <h2 class="section-title">Skills &amp; tools</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Executive &amp; Admin Support</div>
+          <ul class="skill-list">
+            <li>Executive correspondence</li>
+            <li>Calendar &amp; schedule management</li>
+            <li>Vendor &amp; client coordination</li>
+            <li>Document management</li>
+            <li>ISO 9001 &amp; 14001 records</li>
+            <li>Lease administration</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Accounting &amp; Finance</div>
+          <ul class="skill-list">
+            <li>Accounts receivable &amp; payable</li>
+            <li>Bank reconciliation</li>
+            <li>Invoicing &amp; billing</li>
+            <li>Collections management</li>
+            <li>Financial reporting</li>
+            <li>Customer account monitoring</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Systems &amp; Tools</div>
+          <ul class="skill-list">
+            <li>QuickBooks Online</li>
+            <li>Microsoft Excel (Advanced)</li>
+            <li>ConnectWise · Winward</li>
+            <li>CAFT · Global Payments</li>
+            <li>Google Workspace</li>
+            <li>Microsoft Teams · Slack · Zoom</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Want the full picture?</h2>
+      <p class="resume-desc">Download my resume for the complete work history, or view it online. All 13 years, all the details.</p>
+      <div class="resume-actions">
+        <a href="Emcy_Gentizon_EA_Resume.pdf" download class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download resume (PDF)
+        </a>
+        <a href="#contact" class="btn-outline">Talk to me directly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner fade-in">
+      <div class="contact-grid">
+        <div>
+          <p class="section-eyebrow">Let's connect</p>
+          <h2 class="section-title">Ready when you are</h2>
+          <p class="contact-intro">I'm actively looking for remote roles in executive support, accounting admin, or operations administration. If you have a role or a conversation worth having, reach out directly.</p>
+
+          <a href="mailto:emcy.ph05@gmail.com" class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">emcy.ph05@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/639617385572" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">WhatsApp</div>
+              <div class="contact-value">+63 961 738 5572</div>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/emcy-gentizon" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/emcy-gentizon</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="availability-card">
+          <div class="avail-status"><span class="avail-dot"></span>Available now</div>
+          <div class="avail-title">Open to remote opportunities</div>
+          <ul class="avail-list">
+            <li>Full-time or contract</li>
+            <li>Fully remote</li>
+            <li>Immediate start</li>
+            <li>Any timezone (flexible hours)</li>
+          </ul>
+          <a href="mailto:emcy.ph05@gmail.com" class="btn-primary" style="width:100%;justify-content:center;border-radius:8px;">Send me a message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Emcy Gentizon · Rizal, Philippines · <a href="mailto:emcy.ph05@gmail.com">emcy.ph05@gmail.com</a></p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
