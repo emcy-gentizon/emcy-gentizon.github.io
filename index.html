@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emcy Gentizon — Virtual Executive Assistant</title>
-  <meta name="description" content="Virtual Executive Assistant & Accounting Admin with 13 years of remote experience. Cross-border CAD and USD operations. Available immediately.">
-  <meta property="og:title" content="Emcy Gentizon — Virtual Executive Assistant">
-  <meta property="og:description" content="13 years of remote back-office ownership. AP/AR, QuickBooks, CAFT, ISO records, cross-border US and Canadian operations. Available now.">
+  <title>Emcy Gentizon — Virtual Executive Assistant & Operations Specialist</title>
+  <meta name="description" content="Virtual Executive Assistant & Operations Specialist with 13 years of remote experience. Cross-border CAD and USD operations. Available immediately.">
+  <meta property="og:title" content="Emcy Gentizon — Virtual Executive Assistant & Operations Specialist">
+  <meta property="og:description" content="13 years of remote back-office ownership. Operations coordination, QuickBooks, CAFT, ISO records, cross-border US and Canadian operations. Available now.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,26 +14,27 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --navy: #0D1B2A; --navy-mid: #162336; --copper: #C4874A; --copper-light: #D9A06E;
-      --cream: #F7F5F0; --white: #FFFFFF; --ink: #1A1A1A; --muted: #6B7280;
-      --border: #E5E2DB; --success: #22C55E; --serif: 'Playfair Display', Georgia, serif;
+      --navy: #3D2314; --navy-mid: #4F2E18; --copper: #C1622A; --copper-light: #D4845A;
+      --cream: #FDF6EE; --white: #FFFFFF; --ink: #2C1A0E; --muted: #7A6356;
+      --border: #EAD9C8; --success: #22C55E; --serif: 'Playfair Display', Georgia, serif;
       --sans: 'DM Sans', system-ui, sans-serif;
+      --sage: #7A9E7E; --sage-light: #A8C4A2; --warm-sand: #F0E4D4;
     }
     html { scroll-behavior: smooth; }
     body { font-family: var(--sans); background: var(--cream); color: var(--ink); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
 
     /* NAV */
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1rem 2.5rem; background: rgba(13,27,42,0.93); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1rem 2.5rem; background: rgba(61,35,20,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.08); }
     .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--white); letter-spacing: 0.02em; text-decoration: none; }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a { font-size: 0.85rem; color: rgba(255,255,255,0.65); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
     .nav-links a:hover { color: var(--copper-light); }
-    .nav-cta { font-size: 0.82rem; color: var(--copper-light); border: 1px solid rgba(196,135,74,0.4); padding: 0.45rem 1.1rem; border-radius: 2rem; text-decoration: none; transition: all 0.2s; font-weight: 500; }
+    .nav-cta { font-size: 0.82rem; color: var(--copper-light); border: 1px solid rgba(212,132,90,0.5); padding: 0.45rem 1.1rem; border-radius: 2rem; text-decoration: none; transition: all 0.2s; font-weight: 500; }
     .nav-cta:hover { background: var(--copper); color: var(--white); border-color: var(--copper); }
 
     /* HERO */
     #hero { min-height: 100vh; background: var(--navy); display: flex; align-items: center; padding: 8rem 2.5rem 5rem; position: relative; overflow: hidden; }
-    #hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(196,135,74,0.08) 0%, transparent 70%), radial-gradient(ellipse 40% 60% at 20% 80%, rgba(29,122,107,0.06) 0%, transparent 60%); }
+    #hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(193,98,42,0.12) 0%, transparent 70%), radial-gradient(ellipse 40% 60% at 20% 80%, rgba(122,158,126,0.08) 0%, transparent 60%); }
     .hero-inner { max-width: 860px; position: relative; z-index: 1; }
     .hero-eyebrow { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; color: var(--copper); text-transform: uppercase; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
     .hero-eyebrow::after { content: ''; display: inline-block; width: 40px; height: 1px; background: var(--copper); opacity: 0.5; }
@@ -49,11 +50,11 @@
     .btn-outline:hover { border-color: rgba(255,255,255,0.5); color: var(--white); }
 
     /* STATS */
-    .stats-strip { background: var(--navy-mid); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 2rem 2.5rem; display: flex; justify-content: center; }
-    .stat-item { text-align: center; padding: 0 3rem; border-right: 1px solid rgba(255,255,255,0.08); }
+    .stats-strip { background: var(--navy-mid); border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 2rem 2.5rem; display: flex; justify-content: center; }
+    .stat-item { text-align: center; padding: 0 3rem; border-right: 1px solid rgba(255,255,255,0.1); }
     .stat-item:last-child { border-right: none; }
     .stat-number { font-family: var(--serif); font-size: 2.4rem; font-weight: 600; color: var(--copper-light); line-height: 1; display: block; margin-bottom: 0.3rem; }
-    .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.45); font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase; }
+    .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase; }
 
     /* SECTIONS */
     section { padding: 5.5rem 2.5rem; }
@@ -72,9 +73,9 @@
     .video-text p { color: var(--muted); font-size: 1rem; line-height: 1.75; margin-bottom: 1rem; }
 
     /* ABOUT */
-    #about { background: var(--cream); }
+    #about { background: var(--warm-sand); }
     .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: start; }
-    .about-text p { color: #3D3D3D; font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.25rem; }
+    .about-text p { color: #3D2314; font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.25rem; }
     .highlight-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
     .highlight-card .label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--copper); margin-bottom: 0.5rem; }
     .highlight-card .value { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; color: var(--ink); line-height: 1.2; margin-bottom: 0.3rem; }
@@ -87,17 +88,17 @@
     .exp-item:last-child { border-bottom: none; padding-bottom: 0; }
     .exp-company { font-weight: 500; font-size: 0.9rem; color: var(--ink); margin-bottom: 0.2rem; }
     .exp-location { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
-    .exp-dates { display: inline-block; font-size: 0.75rem; font-weight: 500; color: var(--copper); background: rgba(196,135,74,0.1); padding: 0.25rem 0.65rem; border-radius: 99px; border: 1px solid rgba(196,135,74,0.2); }
+    .exp-dates { display: inline-block; font-size: 0.75rem; font-weight: 500; color: var(--copper); background: rgba(193,98,42,0.08); padding: 0.25rem 0.65rem; border-radius: 99px; border: 1px solid rgba(193,98,42,0.2); }
     .exp-title { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--ink); margin-bottom: 0.75rem; line-height: 1.3; }
     .exp-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.7; margin-bottom: 0.9rem; font-style: italic; }
     .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
-    .exp-bullets li { font-size: 0.9rem; color: #3D3D3D; line-height: 1.6; display: flex; gap: 0.6rem; }
+    .exp-bullets li { font-size: 0.9rem; color: #3D2314; line-height: 1.6; display: flex; gap: 0.6rem; }
     .exp-bullets li::before { content: '▸'; color: var(--copper); flex-shrink: 0; font-size: 0.8rem; margin-top: 0.2rem; }
-    .exp-result { margin-top: 1rem; padding: 0.9rem 1.1rem; background: rgba(196,135,74,0.06); border-left: 2px solid var(--copper); border-radius: 0 8px 8px 0; font-size: 0.88rem; color: #4A3520; line-height: 1.6; }
-    .exp-result strong { color: #8B5A1A; font-weight: 500; }
+    .exp-result { margin-top: 1rem; padding: 0.9rem 1.1rem; background: rgba(193,98,42,0.06); border-left: 2px solid var(--copper); border-radius: 0 8px 8px 0; font-size: 0.88rem; color: #4A2010; line-height: 1.6; }
+    .exp-result strong { color: #8B3A10; font-weight: 500; }
 
     /* PROOF OF WORK */
-    #proof { background: var(--cream); }
+    #proof { background: var(--warm-sand); }
     .proof-grid { display: flex; flex-direction: column; gap: 1rem; }
     .proof-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
     .proof-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
@@ -119,18 +120,18 @@
     .proof-screen span { color: #1B5EB5; font-weight: 500; }
     .proof-quote { border-left: 2px solid var(--border); padding: 0.75rem 1rem; font-size: 0.88rem; color: var(--muted); font-style: italic; line-height: 1.65; margin-bottom: 1rem; }
     .proof-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-    .proof-bullets li { font-size: 0.88rem; color: #3D3D3D; line-height: 1.5; display: flex; align-items: flex-start; gap: 0.6rem; }
-    .proof-bullets li::before { content: '✓'; color: #16A34A; font-weight: 500; flex-shrink: 0; }
+    .proof-bullets li { font-size: 0.88rem; color: #3D2314; line-height: 1.5; display: flex; align-items: flex-start; gap: 0.6rem; }
+    .proof-bullets li::before { content: '✓'; color: var(--sage); font-weight: 500; flex-shrink: 0; }
     .proof-disclaimer { font-size: 0.75rem; color: var(--muted); font-style: italic; text-align: center; margin-top: 1.25rem; }
 
     /* SKILLS */
     #skills { background: var(--white); }
     .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-    .skill-group { background: var(--cream); border: 1px solid var(--border); border-radius: 12px; padding: 1.4rem; }
+    .skill-group { background: var(--warm-sand); border: 1px solid var(--border); border-radius: 12px; padding: 1.4rem; }
     .skill-group-title { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--copper); margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
     .skill-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-    .skill-list li { font-size: 0.88rem; color: #3D3D3D; display: flex; align-items: center; gap: 0.5rem; }
-    .skill-list li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--copper); flex-shrink: 0; opacity: 0.6; }
+    .skill-list li { font-size: 0.88rem; color: #3D2314; display: flex; align-items: center; gap: 0.5rem; }
+    .skill-list li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sage); flex-shrink: 0; opacity: 0.8; }
 
     /* RESUME */
     #resume { background: var(--navy); text-align: center; }
@@ -139,7 +140,7 @@
     .resume-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
     /* CONTACT */
-    #contact { background: var(--cream); }
+    #contact { background: var(--warm-sand); }
     .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: start; }
     .contact-intro { font-size: 1.05rem; color: var(--muted); line-height: 1.8; margin-bottom: 2rem; }
     .contact-item { display: flex; align-items: center; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--ink); transition: color 0.2s; }
@@ -200,10 +201,10 @@
     <div class="hero-inner">
       <p class="hero-eyebrow">Available for remote opportunities</p>
       <h1 class="hero-name">Emcy <em>Gentizon</em></h1>
-      <p class="hero-title">Virtual Executive Assistant &amp; Accounting Admin</p>
+      <p class="hero-title">Virtual Executive Assistant &amp; Operations Specialist</p>
       <p class="hero-tagline">
-        I ran the back office of a <strong>Canadian company for 13 years</strong> — remotely, independently, across both Canadian and US operations.
-        AP/AR, executive support, ISO records, CAFT, cross-border client management.
+        I ran the back office of <strong>Condor Solutions Ltd.</strong> — a Canadian company — for 13 years, remotely, independently, across both Canadian and US operations.
+        Executive support, operations coordination, ISO records, CAFT, cross-border client management.
         If you need someone who gets it done without being managed every step of the way, <strong>let's talk.</strong>
       </p>
       <div class="hero-actions">
@@ -221,7 +222,7 @@
 
   <div class="stats-strip">
     <div class="stat-item"><span class="stat-number">13</span><span class="stat-label">Years Remote</span></div>
-    <div class="stat-item"><span class="stat-number">90.9%</span><span class="stat-label">AR Cleared in 22 Months</span></div>
+    <div class="stat-item"><span class="stat-number">90.9%</span><span class="stat-label">AR Recovery — 22 Months</span></div>
     <div class="stat-item"><span class="stat-number">2</span><span class="stat-label">Countries — CA &amp; US</span></div>
     <div class="stat-item"><span class="stat-number">ISO</span><span class="stat-label">9001 &amp; 14001 Records</span></div>
   </div>
@@ -252,8 +253,8 @@
         <div class="about-text">
           <p class="section-eyebrow">About me</p>
           <h2 class="section-title">13 years running a cross-border back office</h2>
-          <p>For over a decade, I was the remote backbone of a Canadian point-of-sale and equipment leasing operation — supporting both Canadian and US-side business simultaneously, from the Philippines, without missing a beat.</p>
-          <p>That meant full-cycle AP/AR, bank reconciliation, collections, executive correspondence, vendor coordination, ISO-compliant records, CAFT payment setup, and maintaining client statements for a 17-account cross-border dealer network — all in QuickBooks Online, across time zones, in both CAD and USD.</p>
+          <p>For over a decade, I was the remote backbone of <strong>Condor Solutions Ltd.</strong> — a Canadian point-of-sale and equipment leasing operation — supporting both Canadian and US-side business simultaneously, from the Philippines, without missing a beat.</p>
+          <p>That meant owning the full customer journey — from signed quote to completed installation — alongside executive correspondence, vendor coordination, ISO-compliant records, CAFT payment setup, and supporting a sister leasing company running concurrently. All of it, remotely, across CAD and USD, from the Philippines.</p>
           <p>Before that: international debt collections in Dubai, operations coordination for KFC Philippines, and government administrative work. Every environment was different. The throughline was always the same — show up, take ownership, deliver.</p>
           <p>I hold a Bachelor of Science in Accountancy from the University of San Agustin, Iloilo City. Based in Rizal, Philippines. Available immediately for full-time remote roles.</p>
         </div>
@@ -261,12 +262,12 @@
           <div class="highlight-card">
             <div class="label">Biggest win</div>
             <div class="value">90.9% in 22 months</div>
-            <div class="desc">Reduced outstanding AR from $134,246.38 to $12,253.91 — while maintaining all daily responsibilities concurrently.</div>
+            <div class="desc">Recovered over 90% of outstanding AR — sustained over 22 months while maintaining all daily responsibilities concurrently.</div>
           </div>
           <div class="highlight-card">
             <div class="label">Cross-border operations</div>
             <div class="value">CAD &amp; USD</div>
-            <div class="desc">Managed parallel Canadian and US banking, deposit operations, and a 17-account cross-border client portfolio.</div>
+            <div class="desc">Managed parallel Canadian and US banking, deposit operations, and client accounts across both currencies — simultaneously, without a team.</div>
           </div>
           <div class="highlight-card">
             <div class="label">Documentation standard</div>
@@ -290,42 +291,42 @@
 
       <div class="exp-item">
         <div class="exp-meta">
-          <div class="exp-company">Canadian POS Company</div>
-          <div class="exp-location">Remote — Canada (name withheld)</div>
+          <div class="exp-company">Condor Solutions Ltd.</div>
+          <div class="exp-location">Remote — Calgary &amp; Medicine Hat, Alberta, Canada</div>
           <div class="exp-dates">Aug 2013 – May 2026</div>
         </div>
         <div>
-          <div class="exp-title">Virtual Executive Assistant &amp; Accounting Admin</div>
-          <p class="exp-desc">Back-office support for a Canadian point-of-sale company — remotely, independently, for 13 years.</p>
+          <div class="exp-title">Virtual Executive Assistant &amp; Operations Specialist</div>
+          <p class="exp-desc">Sole remote back-office operator for a Canadian point-of-sale company — owned every system and process handed to me, independently, for 13 years.</p>
           <ul class="exp-bullets">
-            <li>Managed executive correspondence, scheduling, and vendor and client communication</li>
-            <li>Handled full-cycle AP/AR, invoicing, bank reconciliation, and collections in QuickBooks Online</li>
-            <li>Managed parallel CAD and USD bank deposit operations and maintained client statements for a 17-account cross-border US and Canadian dealer network</li>
-            <li>Produced financial reports and monitored customer accounts, escalating delinquent accounts through a structured collections process</li>
-            <li>Maintained ISO 9001 and 14001-compliant records independently — consistent, organized, and audit-ready throughout entire tenure</li>
-            <li>Operated across ConnectWise, CAFT, Global Payments, and Microsoft Excel</li>
+            <li>Owned the full customer onboarding cycle — from signed quote to completed installation: created tickets in ConnectWise, collected downpayments, raised purchase orders, coordinated with suppliers, monitored equipment delivery, scheduled technicians, and processed final payment</li>
+            <li>Managed inbound business calls, executive correspondence, vendor communication, and customer support across all accounts — sole point of contact from 2020 onward</li>
+            <li>Maintained customer equipment records, support agreements, and prepaid service plan documentation in ConnectWise — kept all accounts current and correctly categorised</li>
+            <li>Handled invoicing, bank reconciliation, and payment processing across CAD and USD accounts in QuickBooks and Global Payments</li>
+            <li>Maintained ISO 9001 and 14001-compliant records independently throughout entire tenure — consistent, organised, and audit-ready</li>
+            <li>Supported a separate BPO client portfolio under the same management — statements of accounts and payment coordination</li>
           </ul>
           <div class="exp-result">
-            <strong>Key result:</strong> Reduced outstanding AR from $134,246.38 to $12,253.91 over 22 months — a 90.9% recovery — without disrupting any ongoing operational responsibilities.
+            <strong>Key result:</strong> Recovered over 90% of outstanding AR over 22 months — without disrupting any ongoing operational responsibilities.
           </div>
         </div>
       </div>
 
       <div class="exp-item">
         <div class="exp-meta">
-          <div class="exp-company">Canadian Equipment Leasing Company</div>
-          <div class="exp-location">Remote — Canada (name withheld)</div>
+          <div class="exp-company">KK Leasing Inc.</div>
+          <div class="exp-location">Remote — Calgary &amp; Medicine Hat, Alberta, Canada</div>
           <div class="exp-dates">Aug 2013 – May 2026</div>
         </div>
         <div>
-          <div class="exp-title">Virtual Executive Assistant &amp; Accounting Admin</div>
-          <p class="exp-desc">Concurrent role supporting the equipment leasing arm under the same management — full leasing administration alongside general EA and accounting responsibilities.</p>
+          <div class="exp-title">Leasing Administrator &amp; Operations Coordinator</div>
+          <p class="exp-desc">Concurrent role managing the full equipment leasing lifecycle for a Canadian leasing company under the same ownership — sole operator alongside the managing director.</p>
           <ul class="exp-bullets">
-            <li>Administered equipment lease contracts, payment schedules, and renewal tracking</li>
-            <li>Set up and managed customer payment accounts in CAFT — Canada's automated banking transfer system</li>
-            <li>Managed customer account communication and collections follow-up for leasing accounts</li>
-            <li>Handled AP/AR, invoicing, and bank reconciliation via QuickBooks Online and Winward</li>
-            <li>Supported executive correspondence, vendor coordination, and leasing documentation</li>
+            <li>Managed a portfolio of up to 50 active leasing clients — monitored contract terms, tracked expiry dates, and coordinated renewals end to end</li>
+            <li>Processed Personal Property Security Act (PPSA) registrations for all equipment leases — a legal filing requirement specific to Canadian secured transactions</li>
+            <li>Set up and administered customer payment accounts in CAFT — configured debit records, banking details, and monthly payment schedules for CAD lease fee collection</li>
+            <li>Coordinated the full leasing process from documentation through to installation scheduling — liaising between clients, management, and technicians</li>
+            <li>Reconciled lease payments and maintained accurate records in QuickBooks and Winward</li>
           </ul>
         </div>
       </div>
@@ -383,7 +384,7 @@
     <div class="section-inner fade-in">
       <p class="section-eyebrow">Portfolio — work samples</p>
       <h2 class="section-title">Proof of work</h2>
-      <p style="color:var(--muted);font-size:1rem;margin-bottom:2rem;max-width:580px;">Five verified samples from 13 years of remote back-office work. Company name and client details withheld for confidentiality.</p>
+      <p style="color:var(--muted);font-size:1rem;margin-bottom:2rem;max-width:580px;">Six verified samples from 13 years of remote back-office work at Condor Solutions Ltd. and KK Leasing Inc. Client-level data withheld for confidentiality.</p>
 
       <div class="proof-grid">
 
@@ -391,20 +392,19 @@
           <div class="proof-card-top">
             <div style="display:flex;align-items:flex-start;gap:12px;">
               <div class="proof-icon green">📉</div>
-              <div><div class="proof-title">Accounts receivable recovery</div><div class="proof-system">Winward AR Aging Summary · 2017 – 2019</div></div>
+              <div><div class="proof-title">Accounts receivable recovery</div><div class="proof-system">Condor Solutions Ltd. · QuickBooks AR Aging Summary · 2017 – 2019</div></div>
             </div>
             <span class="proof-tag">Verified report</span>
           </div>
           <div class="proof-stats">
             <div class="proof-stat"><span class="v">90.9%</span><span class="l">AR reduced</span></div>
-            <div class="proof-stat"><span class="v">$121K+</span><span class="l">recovered</span></div>
             <div class="proof-stat"><span class="v">22 mo.</span><span class="l">sustained</span></div>
           </div>
           <ul class="proof-bullets">
-            <li>Before: $134,246.38 outstanding (May 2017)</li>
-            <li>After: $12,253.91 remaining (March 2019)</li>
+            <li>Outstanding AR reduced by over 90% across 22 months</li>
             <li>Maintained concurrently with all daily responsibilities — no additional staff</li>
             <li>No disruption to operations throughout the recovery period</li>
+            <li>Verified via QuickBooks AR Aging Summary reports (start and end period)</li>
           </ul>
         </div>
 
@@ -416,8 +416,8 @@
             </div>
             <span class="proof-tag">System activity</span>
           </div>
-          <div class="proof-desc">Full accounting interface ownership across invoices, expenses, procurement, and payments — all 411 batches posted under user <strong>egentizon</strong>.</div>
-          <div class="proof-screen">Posted By: <span>egentizon</span> · Batches: <span>411 total</span><br>Modules: Invoice · Expense · Procurement · Payments<br>Dashboard: <span>"Hello Emcy"</span> — active named account confirmed</div>
+          <div class="proof-desc">Full accounting interface ownership across invoices, expenses, procurement, and payments — all batches posted under user <strong>egentizon</strong>. The 411 shown reflects approximately one week of activity; peak volume during busier periods was significantly higher.</div>
+          <div class="proof-screen">Posted By: <span>egentizon</span> · Sample period: <span>approx. 1 week</span><br>Modules: Invoice · Expense · Procurement · Payments<br>Dashboard: <span>"Hello Emcy"</span> — active named account confirmed</div>
           <ul class="proof-bullets">
             <li>Username egentizon verified across all 411 batch entries</li>
             <li>Multi-module access: CRM, tickets, invoicing, service board, product catalog</li>
@@ -433,8 +433,8 @@
             </div>
             <span class="proof-tag">System access</span>
           </div>
-          <div class="proof-desc">Multi-user QuickBooks Premier environment managing Canadian and US dollar accounts, chart of accounts, customer and vendor centres, and collections reporting.</div>
-          <div class="proof-screen">Edition: <span>Premier Professional Services (multi-user)</span><br>Currencies: <span>CAD and USD — parallel operations</span><br>Active: Chart of Accounts · Customer Centre · Vendor Centre · Collections Report</div>
+          <div class="proof-desc">Multi-user QuickBooks Premier environment managing Canadian and US dollar accounts, chart of accounts, customer and vendor centres, and financial reporting.</div>
+          <div class="proof-screen">Edition: <span>Premier Professional Services (multi-user)</span><br>Currencies: <span>CAD and USD — parallel operations</span><br>Active: Chart of Accounts · Customer Centre · Vendor Centre · Financial Reports</div>
           <ul class="proof-bullets">
             <li>Multi-user environment — not a solo or trial account</li>
             <li>Parallel CAD and USD operations — cross-border banking management</li>
@@ -446,7 +446,7 @@
           <div class="proof-card-top">
             <div style="display:flex;align-items:flex-start;gap:12px;">
               <div class="proof-icon slate">🏦</div>
-              <div><div class="proof-title">CAFT — Canadian automated funds transfer</div><div class="proof-system">CAFT payment system · CAD debit processing · 2015 – 2016</div></div>
+              <div><div class="proof-title">CAFT — Canadian automated funds transfer</div><div class="proof-system">CAFT payment system · CAD debit processing · 2016 – 2026</div></div>
             </div>
             <span class="proof-tag">Payment system</span>
           </div>
@@ -454,6 +454,7 @@
           <div class="proof-screen">Currency: <span>CAD</span> · Record Type: <span>D - Debit Record</span><br>Transaction Type: <span>470 - Fees/Dues</span> · Frequency: <span>Monthly</span><br>Banks: <span>Bank of Montreal · Servus Credit Union</span></div>
           <ul class="proof-bullets">
             <li>CAFT is specific to Canadian banking — not general bookkeeping knowledge</li>
+            <li>Used continuously from 2016 through 2026 — ten years of active CAFT administration</li>
             <li>Configured debit records, routing, serviceability codes, and return accounts</li>
             <li>All account numbers, names, and amounts redacted for confidentiality</li>
           </ul>
@@ -463,7 +464,7 @@
           <div class="proof-card-top">
             <div style="display:flex;align-items:flex-start;gap:12px;">
               <div class="proof-icon rose">✉️</div>
-              <div><div class="proof-title">Vendor correspondence — procurement coordination</div><div class="proof-system">Microsoft Outlook · Multi-year vendor relationship · 2024 – 2026</div></div>
+              <div><div class="proof-title">Vendor correspondence — procurement coordination</div><div class="proof-system">Microsoft Outlook · Long-term vendor relationship · 2016 – 2026</div></div>
             </div>
             <span class="proof-tag">Email evidence</span>
           </div>
@@ -471,7 +472,8 @@
           <div class="proof-quote">"Good morning Emcy, we will continue to monitor the sequence and there will not be duplicate numbers." — Vendor reply, April 2024</div>
           <ul class="proof-bullets">
             <li>Named directly by external vendor — not routed through a manager</li>
-            <li>Multi-year thread history: 2024, 2025, 2026 — sustained relationship</li>
+            <li>Relationship spanning approximately a decade — vendor coordination since ~2016</li>
+            <li>Screenshot thread shows 2024–2026 activity; full history goes back significantly further</li>
             <li>Organised inbox with folder structure — active email management confirmed</li>
           </ul>
         </div>
@@ -481,22 +483,22 @@
           <div class="proof-card-top">
             <div style="display:flex;align-items:flex-start;gap:12px;">
               <div class="proof-icon green">📞</div>
-              <div><div class="proof-title">Phone2 softphone — inbound communication management</div><div class="proof-system">Phone2 VOIP system · Active 2025 – 2026</div></div>
+              <div><div class="proof-title">Business communications — inbound &amp; outbound call management</div><div class="proof-system">Konnect VOIP · Phone2 VOIP · 1-800 number · 2013 – 2026</div></div>
             </div>
             <span class="proof-tag">Live system</span>
           </div>
-          <div class="proof-desc">Managed inbound business calls, voicemails, and missed calls through Phone2 — a cloud-based VOIP softphone system. Served as the live communication point of contact for the company alongside all other back-office responsibilities.</div>
-          <div class="proof-screen">System: <span>Phone2 VOIP (app.phone2.io)</span><br>Call types handled: <span>Inbound calls · Voicemails · Missed calls</span><br>Active periods: <span>September 2025 · November 2025 · May 2026</span></div>
+          <div class="proof-desc">Handled inbound and outbound business calls from day one at Condor — through Konnect VOIP, then Phone2, always on the company 1-800 number. Internal comms evolved from Yahoo Messenger to Skype to Microsoft Teams throughout the tenure.</div>
+          <div class="proof-screen">VOIP systems: <span>Konnect → Phone2 (app.phone2.io)</span><br>Call types: <span>Inbound · Outbound · Voicemail monitoring</span><br>Internal messaging: <span>Yahoo Messenger → Skype → MS Teams</span></div>
           <ul class="proof-bullets">
-            <li>Managed all inbound business communication — calls were answered and routed through her account</li>
-            <li>Multi-type call handling: live calls, voicemail monitoring, and missed call follow-up</li>
+            <li>Inbound and outbound calls handled throughout entire 13-year tenure — not a new responsibility</li>
+            <li>Phone2 screenshot shows 2025–2026 activity; Konnect VOIP was used prior to that</li>
+            <li>Company 1-800 number managed alongside all other back-office responsibilities</li>
             <li>Phone numbers and caller details redacted for confidentiality</li>
-            <li>Used alongside email, accounting systems, and document management — full communication stack</li>
           </ul>
         </div>
 
       </div>
-      <p class="proof-disclaimer">All samples sourced from live production systems and active correspondence. Company name and client-level data withheld for confidentiality.</p>
+      <p class="proof-disclaimer">All samples sourced from live production systems and active correspondence at Condor Solutions Ltd. and KK Leasing Inc. Client-level data withheld for confidentiality.</p>
     </div>
   </section>
 
@@ -519,12 +521,12 @@
         <div class="skill-group">
           <div class="skill-group-title">Accounting &amp; Finance</div>
           <ul class="skill-list">
-            <li>Accounts receivable &amp; payable</li>
+            <li>Accounts payable &amp; receivable</li>
             <li>Bank reconciliation — CAD &amp; USD</li>
             <li>Invoicing &amp; billing</li>
-            <li>Collections management</li>
             <li>Financial reporting</li>
             <li>Cross-border client statements</li>
+            <li>Payment processing — CAFT &amp; Global Payments</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -535,7 +537,8 @@
             <li>ConnectWise · Winward · CAFT</li>
             <li>Global Payments</li>
             <li>Google Workspace</li>
-            <li>Microsoft Teams · Slack · Zoom</li>
+            <li>Microsoft Teams · Zoom</li>
+            <li>Konnect · Phone2 VOIP</li>
           </ul>
         </div>
       </div>
@@ -562,7 +565,7 @@
         <div>
           <p class="section-eyebrow">Let's connect</p>
           <h2 class="section-title">Ready when you are</h2>
-          <p class="contact-intro">I'm actively looking for remote roles in executive support, accounting admin, or operations administration. If you have a role or a conversation worth having, reach out directly.</p>
+          <p class="contact-intro">I'm actively looking for remote roles in executive support, operations administration, or back-office coordination. If you have a role or a conversation worth having, reach out directly.</p>
           <a href="mailto:emcy.ph05@gmail.com" class="contact-item">
             <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
             <div><div class="contact-label">Email</div><div class="contact-value">emcy.ph05@gmail.com</div></div>
